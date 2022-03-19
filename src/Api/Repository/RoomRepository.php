@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\Room;
+use App\Interfaces\RoomRepositoryInterface;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\OptimisticLockException;
 use Doctrine\ORM\ORMException;
@@ -14,7 +15,7 @@ use Doctrine\Persistence\ManagerRegistry;
  * @method Room[]    findAll()
  * @method Room[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class RoomRepository extends ServiceEntityRepository
+class RoomRepository extends ServiceEntityRepository implements RoomRepositoryInterface
 {
     public function __construct(ManagerRegistry $registry)
     {

@@ -13,7 +13,6 @@ class RoomSeekerController extends AbstractController
 
     public function roomSeeker(Request $request): Response {
 
-
         return $this->render('reservation/list_rooms.html.twig', [
             'request' => $request
         ]);
