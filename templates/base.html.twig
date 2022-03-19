@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="icon"
+          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+    {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+</head>
+<body>
+{#        <div class="row d-flex align-items-center title-container px-4">#}
+{#            <div class="col-4 header-title">#}
+{#                <h2>#}
+{#                    <a href="/">Chapp Solutions</a>#}
+{#                </h2>#}
+{#            </div>#}
+{#            <div class="offset-4 col-4 header-subtitle">#}
+{#                <a href="/new">Nueva reserva</a>#}
+{#            </div>#}
+{#        </div>#}
+
+
+<div class="row header-container">
+    <div class="col">
+        <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+            <div class="container">
+                <a href="/" class="navbar-brand">Chapp Solutions</a>
+                <div class="" id="">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a href="/new" class="nav-link">Nueva reserva</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="body-container">
+    <div class="row">
+        <div class="col">
+            {% block body %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

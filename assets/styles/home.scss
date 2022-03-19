@@ -1,0 +1,21 @@
+
+.card-container {
+  border-radius: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.card-container .card-reservation {
+  background-color: #f6f6f6;
+  border: 0px;
+  border-radius: 2rem;
+}
+
+.card-reservation .date-color {
+  color: darkgrey;
+}
+
+.card-container .card-reservation button {
+  border-radius: 12rem;
+}

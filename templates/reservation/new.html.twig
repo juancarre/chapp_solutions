@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <div class="pad100">
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-lg-12">
+                    <div class="section-title text-center">
+                        <h4>
+                            Nueva reserva
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="well">
+                        {{ form_start(form, {'attr': {'id': 'room_seeker', 'url': url}, 'method': 'POST'}) }}
+                            <fieldset>
+                                <legend><i class="fa fa-lock" aria-hidden="true"></i> Búsqueda de habitaciones</legend>
+                                <div class="form-group">
+                                    <label for="fechas">Seleccione fechas</label>
+                                    <div class="input-group input-daterange" id="fechas">
+                                        {{ form_widget(form.entry_date) }}
+                                        <div class="input-group-addon px-3">a</div>
+                                        {{ form_widget(form.exit_date) }}
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    {{ form_label(form.guests) }}
+                                    {{ form(form.guests) }}
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fa fa-sign-in" aria-hidden="true">Buscar</i>
+                                </button>
+                            </fieldset>
+                        {{ form_end(form) }}
+                    </div>
+                </div>
+
+                <div class="col-sm-7 room-seeker-results">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
