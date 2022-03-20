@@ -1,0 +1,5 @@
+services:
+    room.service:
+        class: App\Domain\Service\RoomService
+        arguments:
+          ['@App\Domain\Interfaces\RoomRepositoryInterface']

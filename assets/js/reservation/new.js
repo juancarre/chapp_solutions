@@ -29,17 +29,26 @@ $(document).ready(function () {
     $('#room_seeker').submit(function (event) {
         event.preventDefault();
 
+        $('.room-seeker-results').empty();
+
         let $form = $(this);
-        let formSerialize = $form.serialize();
+        let data = $form.serialize()
+        console.log(data);
 
         let result = request(
             $form.attr('url'),
             $form.attr('method'),
-            '',
+            $form.serialize(),
             '.room-seeker-results'
         );
-
     })
+
+    // Modal
+    $('#exampleModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+
+
 
 
 });

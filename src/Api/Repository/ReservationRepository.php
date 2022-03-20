@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repository;
+namespace App\Api\Repository;
 
 use App\Entity\Reservation;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;

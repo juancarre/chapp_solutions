@@ -1,11 +1,6 @@
 <?php
-/**
- * Created by Ricardo.
- * Date: 22-10-15
- * Time: 11:30
- */
 
-namespace Domain\Collections;
+namespace App\Domain\Collections;
 
 
 use ArrayIterator;

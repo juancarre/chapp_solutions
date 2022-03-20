@@ -33,7 +33,7 @@
                                     {{ form(form.guests) }}
                                 </div>
                                 <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-sign-in" aria-hidden="true">Buscar</i>
+                                    <i class="fa fa-sign-in" aria-hidden="true" id="showModal">Buscar</i>
                                 </button>
                             </fieldset>
                         {{ form_end(form) }}
@@ -45,6 +45,8 @@
             </div>
         </div>
     </div>
+
+    {% include 'reservation/modal.html.twig' %}
 
 
 {% endblock %}

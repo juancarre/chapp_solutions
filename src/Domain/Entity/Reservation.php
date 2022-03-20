@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Entity;
+namespace App\Domain\Entity;
 
-use App\Repository\ReservationRepository;
+use App\Api\Repository\ReservationRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**

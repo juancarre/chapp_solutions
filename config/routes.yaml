@@ -1,11 +1,11 @@
 index:
     path: /
-    controller: App\Controller\HomeController::index
+    controller: App\Api\Controller\HomeController::index
 
 new_reservation:
     path: /new
-    controller: App\Controller\reservation\NewReservationController::newReservation
+    controller: App\Api\Controller\Reservation\NewReservationController::newReservation
 
 room_seeker:
     path: /room_seeker
-    controller: App\Controller\reservation\RoomSeekerController::roomSeeker
+    controller: App\Api\Controller\Reservation\RoomSeekerController::roomSeeker

@@ -1,26 +1,31 @@
-<div class="row card-container shadow p-3 mb-5 bg-white">
-    <div class="col-12">
-        <div class="card card-reservation">
-            <div class="card-body">
-
-                <div class="row">
-                    <div class="col-12 col-md-4 d-flex align-items-center mb-3 mb-md-0">
-                        <h5 class="card-title">Nombre usuario</h5>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="nameInput" class="col-form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nameInput">
                     </div>
-                    <div class="col-12 col-md-6 card-text d-flex align-content-center mb-3 mb-md-0">
-                        <div class="row">
-                            <div class="col-12">Fecha entrada</div>
-                            <div class="col-12 date-color">Entrada</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">Fecha salida</div>
-                            <div class="col-12  date-color">Salida</div>
-                        </div>
+                    <div class="form-group">
+                        <label for="emailInput" class="col-form-label">Email:</label>
+                        <input type="email" class="form-control" id="emailInput">
                     </div>
-                    <div class="col-12 col-md-2 d-flex align-content-center justify-content-center">
-                        <button href="#" class="btn btn-secondary">Más información</button>
+                    <div class="form-group">
+                        <label for="phoneInput" class="col-form-label">Teléfono:</label>
+                        <input type="tel" class="form-control" id="phoneInput">
                     </div>
-                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Hacer reserva</button>
             </div>
         </div>
     </div>

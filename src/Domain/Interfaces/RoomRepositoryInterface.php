@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Interfaces;
+namespace App\Domain\Interfaces;
+
+use App\Domain\Collections\RoomCollection;
 
 interface RoomRepositoryInterface
 {
-
-    function
+    public function availablesRooms(\DateTime $entryDate, \DateTime $exitDate, int $guests): RoomCollection;
 }

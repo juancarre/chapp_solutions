@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Entity;
+namespace App\Domain\Entity;
 
-use App\Repository\UserRepository;
+use App\Api\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Controller\reservation;
+namespace App\Api\Controller\Reservation;
 
 
-use App\Form\RoomType;
+use App\Api\Form\RoomType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -19,7 +19,7 @@ class NewReservationController extends AbstractController
         $url = $this->generateUrl('room_seeker');
 
 
-        return $this->render('reservation/new.html.twig', [
+        return $this->render('Reservation/new.html.twig', [
             'form' => $form->createView(),
             'url' => $url
         ]);
